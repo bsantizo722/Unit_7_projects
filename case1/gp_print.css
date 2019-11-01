@@ -13,7 +13,29 @@
    comic book pages from Golden Pulps.
 
 */
-
+/*step 19*/
+nav, footer, article{
+   display: none;
+}
+section#sheet{
+   width: 6in;
+   margin-top: 0in;
+   margin-bottom: 0in;
+   margin-right: auto;
+   margin-left: auto;
+}
+img.size1{
+   width: 5in;
+}
+img.size2{
+   width: 3in;
+}
+img.size3{
+   width: 2in;
+}
+img.size4{
+   width: 1.5in;
+}
 
 
 /* Hidden Objects */
