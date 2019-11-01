@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 3
+   
+   Author:  Brandon santizo 
+   Date:      11/01/19
+   
+   Filename: cw_styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+
+*/
+
+
+/* Import Basic Design Styles  */
+/*step 3*/
+@import url("cw_designs.css");
+
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+/*step 4*/
+nav#bottom{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-box: row;
+   flex-flow: row;
+   justify-content: center;
+}
+/*step 5*/
+nav#bottom ul{
+   flex-basis: 150px;
+}
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+/*step 6*/
+@media only screen and (max-width:480px){
+   body{
+      color: rgb(211, 211, 211);
+      background-color: rgb(51, 51, 51);
+   }
+   /*step 7*/
+   aside, article img, section#spotlight{
+      display: none;
+   }
+   /*step 8*/
+   nav#top ul{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-box: row wrap;
+      flex-flow: row wrap;
+      font-size: 2.2em;
+      -webkit-flex: 1 1 130px;
+      flex: 1 1 130px;
+   }
+   /*step 9-10*/
+   nav#top ul li:nth-of-type(1){
+      background: url("cw_image01.png") center / cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(2){
+      background: url("cw_image02.png") center / cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(3){
+      background: url("cw_image03.png") center /  cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(4){
+      background: url("cw_image04.png") center / cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(5){
+      background: url("cw_image05.png") center / cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(6){
+      background: url("cw_image06.png") center / cover no-repeat;
+   }
+   nav#top ul li:nth-of-type(7){
+      background: url("cw_image07.png") center / cover no-repeat;
+   }
+   /*step 11*/
+   a#links{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-box: row nowrap;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+   }
+   /*step 12*/
+   p#links a{
+      color: white;
+      background-color: rgb(220, 27, 27);
+      border-radius: 20px 10px;
+      text-decoration: none;
+   }
+
+}
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+/*step 13*/
+@media only screen and (min-width: 481px){
+   body{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-box: row wrap;
+      flex-flow: row wrap;
+   }
+   /*step 14*/
+   article{
+      flex: 2 1 400px;
+   }
+   /*step 15-16*/
+   nav#top ul{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-box: row nowrap;
+      flex-flow: row nowrap;
+      background-color: rgb(51, 51, 51);
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 80px;
+   }
+   p#links a{
+      display: none;
+   }
+}
