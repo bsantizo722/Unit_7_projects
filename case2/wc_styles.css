@@ -80,7 +80,7 @@ aside div{
 /*step 12*/
 @media only screen and (max-width: 480px){
 
-   nav.hole_list{
+   nav#hole_list{
       order: 99;
    }
    footer{
